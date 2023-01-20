@@ -1,0 +1,125 @@
+.skills {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   margin: -8px -16px;
+
+   &__item {
+      background: #eef0f2;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 8px 8px;
+      cursor: pointer;
+   }
+
+   &__title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+   }
+
+   &__selected-items {
+      background: #ffffff;
+      border: 1px solid #dadce3;
+      border-radius: 12px;
+      padding: 17px;
+
+      .skills__button {
+         svg {
+            path {
+               fill: rgb(247, 59, 59);
+            }
+         }
+      }
+   }
+
+   &__button {
+      svg {
+         path {
+            fill: #3679fd;
+         }
+      }
+   }
+}
+
+.skills-items-level {
+   position: relative;
+}
+
+.active-item-skills-starts {
+   &:not(:first-child) {
+      margin-top: 30px;
+   }
+
+   &__row {
+      display: flex;
+      align-items: center;
+      padding: 16px 25px 16px 16px;
+      background: #fff;
+      border-radius: 12px;
+   }
+
+   &__center {
+      padding-left: 10px;
+      padding-right: 14px;
+      padding-top: 1px;
+      color: #01153A;
+      display: flex;
+      flex-wrap: wrap;
+
+      &>span {
+         padding-right: 14px;
+      }
+   }
+
+   &__str {
+      padding-top: 2px;
+   }
+}
+
+.react-stars {
+   transition: 0.3s;
+
+   &:hover {
+      transform: scale(1.1);
+   }
+}
+
+.btn-drops {
+   width: 28px;
+   height: 28px;
+   min-width: 28px;
+
+   svg {
+      width: inherit;
+      height: inherit;
+      transition: 0.2s;
+      fill: #DADCE3;
+   }
+
+   &:hover {
+      svg {
+         fill: #3679FD;
+      }
+   }
+}
+
+.bnt-delet-ite {
+   width: 20px;
+   height: 20px;
+   min-width: 20px;
+   margin-left: auto;
+
+   svg {
+      width: inherit;
+      height: inherit;
+      fill: #DADCE3;
+      transition: 0.3s;
+   }
+
+   &:hover {
+      svg {
+         fill: #3679FD;
+      }
+   }
+}

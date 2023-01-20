@@ -1,0 +1,62 @@
+.dragged {
+  &__item {
+    background: #ffffff;
+    border-radius: 12px;
+
+    // &.selected {
+    //   .dragged__drag svg {
+    //     // fill: #3679FD;
+    //     stroke: #3679FD;
+    //   }
+    // }
+  }
+
+  &__title {
+    line-height: 19px;
+  }
+
+  span {
+    font-size: 14px;
+    line-height: 16px;
+    color: #838799;
+  }
+
+  &__drag {
+    cursor: pointer;
+  }
+
+  &__delete {
+    cursor: pointer;
+  }
+
+  &__arrow {
+    transform: rotate(90deg);
+
+    svg {
+      stroke: #3679FD;
+    }
+  }
+}
+
+.dragged_main {
+  background: #f6f8fa;
+  margin-top: 1.5rem;
+}
+
+.dragged_from {}
+
+.dragged-items {
+  display: flex;
+  flex-wrap: wrap;
+  color: #838799;
+  font-size: 14px;
+  font-weight: 350;
+  margin-top: 2px;
+
+}
+
+.dragged-item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

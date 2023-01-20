@@ -1,0 +1,19 @@
+.remove_input {
+   position: relative;
+   input {
+      padding-right: 40px;
+   }
+   &__button {
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      cursor: pointer;
+      z-index: 2;
+      transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+      @media (any-hover: hover) {
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+   }
+}

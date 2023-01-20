@@ -1,0 +1,20 @@
+.addButton {
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 21px;
+   color: #3679fd;
+   svg {
+      margin-top: -3px;
+      path {
+         fill: #3679fd;
+      }
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+}

@@ -1,0 +1,18 @@
+.wr_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url('/../images/other/bg_img_atoriazation.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 90%;
+        min-height: 300px;
+    }
+}

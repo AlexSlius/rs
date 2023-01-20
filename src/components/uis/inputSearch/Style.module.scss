@@ -1,0 +1,17 @@
+.wr {
+    position: relative;
+
+    input {
+        padding-right: 40px;
+    }
+
+    svg {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 16px;
+        top: 50%;
+        margin-top: -10px;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,39 @@
+.row {
+    display: flex;
+    margin: 0 -15px;
+
+    &>div {
+        margin: 0 15px;
+        min-width: 220px;
+    }
+}
+
+.btn {
+    width: 100%;
+    border-radius: 12px;
+    text-align: center;
+    padding: 15px;
+    transition: 0.4s !important;
+
+    &_next {
+        background: #3679FD;
+        border: 1px solid #3679FD;
+
+        &:hover {
+            background: #3f7ffd;
+            border: 1px solid #3f7ffd;
+        }
+    }
+
+    &_prev {
+        background: #F6F8FA;
+        border: 1px solid #DADCE3;
+        color: #838799;
+
+        &:hover {
+            color: #838799;
+            background: #EEF0F2;
+            border: 1px solid #DADCE3;
+        }
+    }
+}

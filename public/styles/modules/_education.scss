@@ -1,0 +1,21 @@
+.education {
+    &__item {
+       background: #ffffff;
+       border-radius: 12px;
+    }
+    &__title {
+       line-height: 19px;
+    }
+    span {
+       font-size: 14px;
+       line-height: 16px;
+       color: #838799;
+    }
+    &__drag {
+       cursor: pointer;
+    }
+    &__delete {
+       cursor: pointer;
+    }
+ }
+ 

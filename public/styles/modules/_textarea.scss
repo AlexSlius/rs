@@ -1,0 +1,128 @@
+textarea.form-control {
+    border: 1px solid #dadce3;
+    border-radius: 12px;
+    resize: none;
+    padding: 17px 17px 17px 17px;
+    font-weight: 350;
+    min-height: 150px;
+    height: auto;
+ }
+ .textarea {
+    &__item {
+       position: relative;
+    }
+    &__contols {
+       position: absolute;
+       left: 2px;
+       bottom: 1px;
+       border-radius: 12px 0 0 12px;
+       padding: 5px 5px 15px 15px;
+       display: flex;
+       gap: 8px;
+       background: #ffff;
+    }
+    &__button {
+       width: 20px;
+       height: 20px;
+       transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+       font-weight: 350;
+       @media (any-hover: hover) {
+          &:hover {
+             opacity: 0.8;
+          }
+       }
+    }
+    &__button-group {
+       display: inline-flex;
+       gap: 8px;
+       padding: 0 8px;
+       border-left: 1px solid #eef0f2;
+       border-right: 1px solid #eef0f2;
+    }
+    &__prewrite-button {
+       position: absolute;
+       top: 17px;
+       right: 17px;
+       display: inline-flex;
+       align-items: center;
+       z-index: 2;
+       gap: 8px;
+       color: #838799;
+ 
+       svg {
+          path {
+ 
+             fill: #3679fd;
+          }
+       }
+ 
+       &.active {
+          svg {
+             path {
+                fill: #DADCE3;
+             }
+          }
+       }
+    }
+ }
+ 
+ 
+ textarea.prewrite-textarea {
+    padding-top: 38px;
+ }
+
+ .prewritten-popup {
+    position: absolute;
+    right: -5px;
+    top: 0;
+    transform: translateX(100%);
+    z-index: 2;
+
+    &__card {
+        overflow: auto;
+    }
+
+    &__list-item.list-group-item {
+        border: none!important;
+        border-radius: unset;
+        font-size: (14/16) * 1rem;
+        line-height: (21/14);
+        font-weight: 350;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .back {
+            fill: #3679fd;
+        }
+
+        .check {
+            fill: #6DC26C;
+        }
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+            min-width: 2rem;
+            min-height: 2rem;
+            background-color: #F6F8FA;
+            border-radius: 8px;
+            margin-right: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__card-body.card-body {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.5rem;
+        padding-left: 0;
+    }
+}
+
+.no_active_panel textarea.prewrite-textarea{
+   padding-bottom: 17px;
+}

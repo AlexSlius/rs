@@ -1,0 +1,12 @@
+.btn_need {
+    display: flex;
+    align-items: center;
+    color: #838799 !important;
+    font-size: 18px;
+    &_icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        fill: #838799;
+    }
+}

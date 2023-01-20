@@ -1,0 +1,47 @@
+@use "sass:math";
+
+.main_content {
+   &__back {
+      margin-bottom: 26px;
+   }
+
+   &__title {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: math.div(35, 30);
+   }
+
+   &__description {
+      font-weight: 350;
+      line-height: math.div(19, 16);
+      color: #838799;
+      margin-bottom: 0;
+   }
+
+   &__des {
+      padding-right: 10px;
+   }
+}
+
+.row.row-main {
+   flex-wrap: nowrap;
+}
+
+.nav_icon {
+   position: inherit;
+   width: 20px;
+   height: 20px;
+   margin-right: 12px;
+}
+
+.roows {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 30px;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
+
+.cont_right {
+   position: relative;
+}

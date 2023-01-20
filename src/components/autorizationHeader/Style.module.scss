@@ -1,0 +1,21 @@
+.head {
+    position: relative;
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__back {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    &__logo {
+        padding: 0 16px;
+    }
+}

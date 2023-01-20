@@ -1,0 +1,61 @@
+.nav_icon {
+   margin-right: 12px;
+   width: 20px;
+   height: 20px;
+}
+.nav_logo {
+   padding: 25px 30px;
+   display: inline-flex;
+   color: #01153a;
+   font-weight: 300;
+   font-size: 26px;
+   text-decoration: none;
+   line-height: 30px;
+   @media (any-hover: hover) {
+      &:hover {
+         color: #01153a;
+      }
+   }
+   span {
+      font-weight: 400;
+   }
+}
+.nav_link {
+   font-size: 18px;
+   position: relative;
+   &.active {
+      position: relative;
+      &::after {
+         content: "";
+         left: 0;
+         top: 0;
+         width: 4px;
+         background: #3679fd;
+         position: absolute;
+         height: 100%;
+      }
+   }
+}
+.nav_help {
+   padding: 18px 30px;
+   text-align: left;
+   border-top: 1px solid #f6f8fa;
+}
+.nav_help_link {
+   display: inline-flex;
+   align-items: center;
+   gap: 12px;
+   @media (any-hover: hover) {
+      &:hover {
+         color: #01153a;
+         text-decoration: underline;
+      }
+   }
+   svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      font-size: 18px;
+      line-height: 21px;
+   }
+}

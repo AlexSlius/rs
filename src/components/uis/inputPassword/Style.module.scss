@@ -1,0 +1,31 @@
+.row {
+    position: relative;
+}
+
+.in_password {
+    padding-right: 40px;
+}
+
+.btn_eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 17px;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 2;
+
+    svg {
+        height: inherit;
+        width: inherit;
+        fill: #DADCE3;
+        transition: 0.3s;
+    }
+
+    &:hover,
+    &.open {
+        svg {
+            fill: #3679FD;
+        }
+    }
+}

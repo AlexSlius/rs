@@ -1,0 +1,12 @@
+.main {
+    text-align: center;
+    &__title {
+        color: #01153A;
+        font-size: 30px;
+        font-weight: 400;
+        &_bub {
+            margin-top: 12px;
+            color: #838799;
+        }
+    }
+}

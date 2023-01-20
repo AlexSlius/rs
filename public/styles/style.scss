@@ -1,0 +1,25 @@
+@use "sass:math";
+@import "./null";
+@import "./fonts";
+@import "./variables";
+@import "./modules/resume-main";
+@import "./modules/login";
+@import "./modules/dragged-item";
+@import "./modules/textarea";
+@import "./modules/skills";
+@import "./modules/form-autorization";
+@import "./custom";
+@import "@coreui/coreui/dist/css/coreui.min.css";
+
+body {
+   margin: 0;
+   font-family: gt_font;
+   font-size: 16px;
+   font-weight: 350;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

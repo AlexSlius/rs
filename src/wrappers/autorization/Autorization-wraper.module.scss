@@ -1,0 +1,37 @@
+.main_wrapper_autorization {
+    min-height: 100vh;
+}
+
+.autoriaztion__row {
+    display: flex;
+    min-height: inherit;
+}
+
+.autoriaztion__col {
+    width: 50%;
+    min-height: inherit;
+}
+
+.autoriaztion__left {
+    padding: 0;
+}
+
+.autoriaztion__right {
+    padding: 25px 32px 20px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_center {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_bottom {
+        display: flex;
+        justify-content: center;
+    }
+}
